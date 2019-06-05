@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PortalWindow src="https://www.google.com" ref="portal" style="width: 90vw; height: 90vh">
+      <p>Sorry, your browser doesn't support portals :(</p>
+    </PortalWindow>
+
+    <button v-if="'HTMLPortalElement' in window" @click="openPortal">Open</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PortalWindow from './components/PortalWindow.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    PortalWindow
+  },
+  methods: {
+    openPortal: function () {
+      this.$refs.portal.activate()
+    }
   }
 }
 </script>
@@ -21,8 +29,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
