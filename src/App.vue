@@ -4,7 +4,7 @@
       <p>Sorry, your browser doesn't support portals :(</p>
     </PortalWindow>
 
-    <button v-if="'HTMLPortalElement' in window" @click="openPortal">Open</button>
+    <button @click="openPortal">Open</button>
   </div>
 </template>
 
