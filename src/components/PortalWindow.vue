@@ -1,9 +1,11 @@
 <template>
-    <portal v-if="supportsPortals" :src="src" ref="portal">
-        <slot></slot>
-    </portal>
-    <div v-else>
-        <slot></slot>
+    <div>
+        <portal v-if="supportsPortals" :src="src" ref="portal">
+            <slot></slot>
+        </portal>
+        <div v-else>
+            <slot></slot>
+        </div>
     </div>
 </template>
 
