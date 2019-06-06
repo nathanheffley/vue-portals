@@ -1,7 +1,7 @@
 {
   "name": "vue-portals",
   "description": "Assists in creating pages that can embed and be embedded as portal elements.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "Nathan Heffley",
     "email": "nathan@nathanheffley.com"
@@ -17,8 +17,7 @@
     "portal"
   ],
  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-portals ./src/components/index.js",
+    "build": "vue-cli-service build --target lib --name vue-portals ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
