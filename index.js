@@ -1,4 +1,4 @@
-import PortalWindow from "./PortalWindow.vue"
+import PortalWindow from "PortalWindow.vue"
 
 export { PortalWindow }
 
