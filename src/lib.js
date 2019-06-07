@@ -1,3 +1,7 @@
 import PortalWindow from './components/PortalWindow'
 
-export default PortalWindow
+const components = {
+  PortalWindow
+}
+
+export default components
