@@ -23,9 +23,7 @@ export default {
     }
   },
   mounted: function () {
-    alert('hello')
-    window.addEventListener('portalactivate', function (event) {
-      alert('isopen')
+    window.addEventListener('portalactivate', event => {
       this.isOpen = true
     })
   }
