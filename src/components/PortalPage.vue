@@ -1,7 +1,7 @@
 <template>
   <div>
-    <slot name="embed" v-if="isEmbedded"></slot>
-    <slot name="open" v-else-if="isOpen"></slot>
+    <slot name="open" v-if="isOpen"></slot>
+    <slot name="embed" v-else-if="isEmbedded"></slot>
     <slot name="default" v-else></slot>
   </div>
 </template>

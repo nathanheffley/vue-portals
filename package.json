@@ -1,7 +1,7 @@
 {
   "name": "vue-portals",
   "description": "Assists in creating pages that can embed and be embedded as portal elements.",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "author": "Nathan Heffley <nathan@nathanheffley.com>",
   "license": "MIT",
   "repository": {
