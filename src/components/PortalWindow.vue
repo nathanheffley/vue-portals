@@ -3,7 +3,7 @@
     <slot></slot>
   </portal>
   <div v-else>
-      <slot></slot>
+    <slot></slot>
   </div>
 </template>
 
